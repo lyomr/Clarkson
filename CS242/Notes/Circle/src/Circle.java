@@ -58,4 +58,16 @@ public class Circle {
 		  ((float)(Math.PI * (double)this.radius * (double)this.radius));
 		return area;
 	}
+
+	public int hashCode(){
+		return 0x20;
+	}
+
+	public boolean equals(Circle other){
+		return  ;
+	}
+
+	/*public String toString(){
+		return "This circle has radius " + this.radius + ", center: (" + this.center.x + ", " + this.center.y + "), and area: " + this.computeArea();
+	}*/
 }
