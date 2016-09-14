@@ -5,47 +5,49 @@ public class TestDie {
 		
 		Die D1 = new Die();
 		
-//		int topFace = D1.getTop();
+		int topFace;
 		
 		System.out.println("Die Roll lands on: " + D1.getTop());
 		
-		/*int count1; count1 = 0;
-		int count2 = 0; 
-		int count3 = 0; 
-		int count4 = 0;
-		int count5 = 0;
-		int count6 = 0;*/
+	    int count1, count2, count3, count4, count5, count6;
+		count1 = count2 = count3 = count4 = count5 = count6 = 0;
+	    
 		
-		//count 1000 time to see how many times the numbers appears
-		/*for (int i=0; i<1000; i++) {
+		//testing probability die sides appear
+		for (int i=0; i<1000; i++) {
+			//roll die
+			topFace = D1.getTop();
 			
-			// Roll the die
-			for (int num=1; num <= topFace; num++) {
-				if( num == 1 ){
-					  count1++;
+//			for (int num=1; num <= topFace; num++) {
+//				System.out.println(num);
+				if( topFace == 1 ){
+					  count1 = count1 + 1;
+					  System.out.println(count1);
 				  }
 				  
-				if( num == 2 ){
-					  count2++;
+				if( topFace == 2 ){
+					  count2 = count2 + 1;
 				  }
 				  
-				if( num == 3 ){
-					  count3++;
+				if( topFace == 3 ){
+					  count3 = count3 + 1;
 				  }
 				  
-				if( num == 4 ){
-					  count4++;
+				if( topFace == 4 ){
+					  count4 = count4 + 1;
 				  }
 				  
-				if( num == 5 ){
-					  count5++;
+				if( topFace == 5 ){
+					  count5 = count5 + 1;
 				  }
 				  
-				if( num == 6 ){
-					  count6++;
+				if( topFace == 6 ){
+					  count6 = count6 + 1;
 				}
-			}
-		}*/
+//			}
+		}
+		
+		System.out.println();
 
 	}
 
